@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background: rgba(211, 10, 10, 0.904);
+            color: cornsilk;
+            font: normal 10pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM!</h1>
+    <P>AQUI VAI O RESULTADO</P>
+    <p>teste 01</p>
+    <div id ="cta">Clique em mim</div>
+    <script>
+       /* var d = document.getElementById('cta')
+        d.style.background = 'green'*/
+        var n = window.document.querySelector('div#cta')
+        n.style.background = 'blue'
+    </script>
+</body>
+</html>
