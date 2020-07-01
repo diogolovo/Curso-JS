@@ -6,30 +6,30 @@
     <title>Qual o seu País</title>
     <style>
         body {
-            font: normal 15pt montserrat;
+            font: normal 14pt Arial;
+            color: rgba(0, 0, 143, 0.89);
         }
     </style>
 </head>
 <body>
     <h1>Qual o seu pais?</h1>
-    Pais <input type="text" name="txtvel" id="txtvel">
+    <input type="text" name="txtvel" id="txtvel">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="res">
             
     </div>
     <script>
-    function verificar(){
+    function verificar() {
             var txtv = window.document.querySelector('input#txtvel')
             var res = window.document.querySelector('div#res')
             var vel = (txtv.value)
-            res.innerHTML = `<p>Você está em <strong>${vel}</strong><p>` 
-           if (vel == 'Brasil') {
-                res.innerHTML += '<p>Você é Brasileiro!</p>'
-
+            res.innerHTML = `Seu país e ${vel}` 
+           if (vel == 'Brasil'||vel == 'brasil') {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
             } else {
-                res.innerHTML += `<p>Você NÃO e Brasileiro meu jovem!<p>`
-            }
-        }
+                 res.innerHTML += `<p>Você NÃO é Brasileiro!</p>`
+             }
+        } 
 </script>
 </body>
 </html>
